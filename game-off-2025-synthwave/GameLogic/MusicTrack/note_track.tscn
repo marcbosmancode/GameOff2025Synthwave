@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxkh2slidqbml"]
+
+[ext_resource type="Script" uid="uid://dgbi3r0cdscs7" path="res://GameLogic/MusicTrack/note_track.gd" id="1_xqmug"]
+
+[node name="NoteTrack" type="Node2D"]
+script = ExtResource("1_xqmug")
+
+[node name="OriginPoint" type="Marker2D" parent="."]
+
+[node name="DestinationPoint" type="Marker2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="."]

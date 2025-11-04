@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfqm0j01hjghu"]
+
+[ext_resource type="PackedScene" uid="uid://fu8e64fq4sje" path="res://GameLogic/MusicTrack/music_track.tscn" id="1_jjgbg"]
+[ext_resource type="Texture2D" uid="uid://cykss0v6iletp" path="res://Assets/background.png" id="2_bo1nx"]
+
+[node name="Main" type="Node2D"]
+
+[node name="MusicTrack" parent="." instance=ExtResource("1_jjgbg")]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("2_bo1nx")
+centered = false

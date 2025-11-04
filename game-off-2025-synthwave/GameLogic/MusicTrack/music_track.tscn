@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://fu8e64fq4sje"]
+
+[ext_resource type="PackedScene" uid="uid://cxkh2slidqbml" path="res://GameLogic/MusicTrack/note_track.tscn" id="1_qq7iq"]
+[ext_resource type="Script" uid="uid://vsg2kscm2652" path="res://GameLogic/MusicTrack/music_track.gd" id="1_u0h4v"]
+
+[node name="MusicTrack" type="Node2D"]
+script = ExtResource("1_u0h4v")
+
+[node name="NoteTrack" parent="." instance=ExtResource("1_qq7iq")]

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://dvboikqmttkvr"]
+
+[ext_resource type="FontFile" uid="uid://bv4qlf3bb7joi" path="res://Assets/Fonts/Gamey Pixels/Gamey Pixels.ttf" id="1_5uxgi"]
+
+[resource]
+default_font = ExtResource("1_5uxgi")
+default_font_size = 16
