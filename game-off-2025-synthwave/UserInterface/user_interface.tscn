@@ -1,16 +1,41 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdr04r6xkyhy5"]
+[gd_scene load_steps=3 format=3 uid="uid://bdr04r6xkyhy5"]
 
-[ext_resource type="Theme" uid="uid://dvboikqmttkvr" path="res://UserInterface/Theme/default_theme.tres" id="1_71fg6"]
+[ext_resource type="Script" uid="uid://dpgwocjcr7p7" path="res://UserInterface/user_interface.gd" id="1_v7due"]
+[ext_resource type="FontFile" uid="uid://cri80m8yeyjnm" path="res://Assets/Fonts/SunnySpellsBasic/SunnySpellsBasicRegular-Yz1Wv.ttf" id="2_v7due"]
 
 [node name="UserInterface" type="CanvasLayer"]
+script = ExtResource("1_v7due")
 
-[node name="Label" type="Label" parent="."]
+[node name="NoteHitLabel" type="Label" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -16.5
+offset_right = 46.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_v7due")
+theme_override_font_sizes/font_size = 64
+text = "Perfect"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ComboLabel" type="Label" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
-offset_bottom = 23.0
+offset_left = -56.5
+offset_top = 64.0
+offset_right = 56.5
+offset_bottom = 97.0
 grow_horizontal = 2
-theme = ExtResource("1_71fg6")
-text = "Perfect"
+theme_override_fonts/font = ExtResource("2_v7due")
+theme_override_font_sizes/font_size = 40
+text = "Combo 0"
+horizontal_alignment = 1
+vertical_alignment = 1

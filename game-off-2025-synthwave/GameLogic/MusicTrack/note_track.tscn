@@ -9,4 +9,7 @@ script = ExtResource("1_xqmug")
 
 [node name="DestinationPoint" type="Marker2D" parent="."]
 
-[node name="Line2D" type="Line2D" parent="."]
+[node name="TrackLine" type="Line2D" parent="."]
+width = 4.0
+
+[node name="Notes" type="Node2D" parent="."]

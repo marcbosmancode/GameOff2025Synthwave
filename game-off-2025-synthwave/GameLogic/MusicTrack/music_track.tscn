@@ -7,3 +7,29 @@
 script = ExtResource("1_u0h4v")
 
 [node name="NoteTrack" parent="." instance=ExtResource("1_qq7iq")]
+track_id = 1
+
+[node name="DestinationPoint" parent="NoteTrack" index="1"]
+position = Vector2(-60, 400)
+
+[node name="NoteTrack2" parent="." instance=ExtResource("1_qq7iq")]
+position = Vector2(100, 0)
+track_id = 2
+
+[node name="DestinationPoint" parent="NoteTrack2" index="1"]
+position = Vector2(0, 400)
+
+[node name="NoteTrack3" parent="." instance=ExtResource("1_qq7iq")]
+position = Vector2(200, 0)
+track_id = 3
+
+[node name="DestinationPoint" parent="NoteTrack3" index="1"]
+position = Vector2(60, 400)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(-122, 380, 309, 380)
+width = 4.0
+
+[editable path="NoteTrack"]
+[editable path="NoteTrack2"]
+[editable path="NoteTrack3"]
